@@ -1,0 +1,439 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- SITE TITLE -->
+	<title>PeaceBird - Flight Services</title>
+
+	<!-- FAV ICONS and WEBFONT -->
+	<!-- <link rel="icon" href="{% static 'peacebird/favicon.ico' %}">-->
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{% static 'peacebird/favicon-152.png' %}">
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{% static 'peacebird/favicon-120.png' %}">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'peacebird/favicon-72.png' %} ">
+	<link rel="apple-touch-icon-precomposed" href="{% static 'peacebird/favicon-57.png' %}">
+	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,600|Poppins:400,500,700' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+	<!-- ICON FONT -->
+	<link rel="stylesheet" href="{% static 'peacebird/styles1.css' %}">
+
+	<!-- Third Party CSS including Bootstrap -->
+	<link rel="stylesheet" href="{% static 'peacebird/third-party.css' %}">
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="{% static 'peacebird/styles.css' %} ">
+	<link rel="stylesheet" href="{% static 'peacebird/responsive.css' %} ">
+
+	<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+	<!-- =========================
+     SECTION: HOME / HOMEPAGE
+    ============================== -->
+	<section class="home fixed-bg" id="home">
+
+		<div class="color-overlay">
+			<!-- COLOR OVERLAY -->
+
+			<!-- NAVIGATION -->
+			<div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+
+						<!-- NAVBAR EXPAND COLLAPSE ON MOBILE -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#alexis-navigation">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon icon-menu"></span>
+						</button>
+
+						<!-- LOGO -->
+						<a class="navbar-brand" href="#">
+							<img src="{% static 'peacebird/logo.png' %}" alt="LOGO">
+						</a>
+
+					</div>
+
+					<div class="navbar-collapse collapse" id="alexis-navigation">
+						<!-- NAVIGATION LINK -->
+						<ul class="nav navbar-nav navbar-right main-navigation" id="internal-scroll">
+							<li><a href="#home">Home</a>
+							</li>
+							<li><a href="#section1">About</a>
+							</li>
+							<li><a href="#section2">Services</a>
+							</li>
+							
+							<li><a href="#section6">Pilot Shop</a>
+							</li>
+							<li><a href="{% url 'peacebird-enrollment' %}">Enrollment</a>
+							</li>
+							<li><a href="#section9">Flight Articles</a>
+							</li>
+							<li><a href="#section10">Contact</a>
+							</li>
+							<!-- <li><a href="http://example.com" class="external">External Link Example</a></li> -->
+						</ul>
+					</div>
+
+				</div>
+				<!-- /END CONTAINER -->
+			</div>
+			<!-- /END NAIVATION -->
+	
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background" style="background-image:url({% static 'peacebird/home.jpg' %})"></div>
+		<div class="home_content">
+			<div class="home_content_inner">
+				<div class="home_text_large">discover</div>
+				<div class="home_text_small">Discover new worlds</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- =========================
+     SECTION: ABOUT US
+    ============================== -->
+	<section class="about-us" id="section1">
+
+		<div class="container">
+			<div class="row">
+
+				<!-- FEATURED IMAGE AREA -->
+				<div class="col-lg-6 visible-lg">
+					<div class="featured-image red-gradient-overlay">
+						<img src="{% static 'peacebird/about-us.jpg' %}" alt="">
+						<!-- ABOUT US FEATURED IMAGE -->
+						<div class="image-border">
+						</div>
+					</div>
+				</div>
+
+				<!-- ABOUT US BOX -->
+				<div class="col-lg-7 col-sm-12 overflow-box pull-right">
+					<div class="about-box diffuse-shadow wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+
+						<div class="about-content">
+
+							<!-- SECTION NUMBER -->
+							<div class="section-number">
+								01
+							</div>
+
+							<!-- SECTION HEADING -->
+							<h2 class="section-heading text-left">About Us.</h2>
+
+							<!-- PARAGRAPH -->
+							<p class="text-left">
+							
+								PeaceBurd Flight Training and Air Services is the first flight training center in Somalia. We have high qualified proffesional staff that is ready to provide international standards in securing  you the best experience you are willing to fly in.
+								<br/>
+								<h2 class="section-heading text-left">Mission Vission.</h2>
+								<p class="text-left">
+								<br/> Our mission is to provide the best flight services that sets high standards in flight training  to flying enthusiasts. To offer you proffesional and friendly environment. To acheive your personal and proffesional goals in aviation.<br>
+Our Vission is to make it possible flying a lifestyle to those who are willing to reach friendly and safely skies.							</p>
+							
+						</div>
+
+						<div class="four-lines">
+							<div class="line red-line-bottom">
+							</div>
+							<div class="line green-line-bottom">
+							</div>
+							<div class="line purple-line-bottom">
+							</div>
+							<div class="line yellow-line-bottom">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================
+     SECTION: SERVICES
+    ============================== -->
+	<section class="our-focus bgcolor-2" id="section2">
+		<div class="container">
+
+			<!-- SECTION NUMBER -->
+			<div class="section-number centered-number">
+				02
+			</div>
+
+			<!-- SECTION HEADER -->
+			<div class="section-header">
+				<h2>Our Focus.</h2>
+				<div class="sub-heading">
+					We understand your requirement and provide quality works.
+				</div>
+			</div>
+
+			<div class="row focuses">
+
+				<!-- SINGLE FOCUS COLUMN -->
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					
+				</div>
+
+				<!-- SINGLE FOCUS COLUMN -->
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="single-focus white-bg diffuse-shadow green-line-bottom wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+						<!-- ICON -->
+						
+						<!-- HEADING -->
+						<h5>Training</h5>
+						<!-- DETAILS -->
+						<p>
+							We Provide you Training 
+							
+						
+						<br><b><a href="#home">Flight Operation Officer </a>
+					 <a href="#home">Aeronautical Engineering </a>
+					</div>
+				</div>
+
+				<!-- SINGLE FOCUS COLUMN -->
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="single-focus white-bg diffuse-shadow purple-line-bottom wow fadeInDown" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+						<!-- ICON -->
+						
+						<!-- HEADING -->
+						<h5>Flight Services</h5>
+						<!-- DETAILS -->
+						<p>
+							We Provide you Service
+						
+   						<b><br><a href="#home">Normal Flight</a>
+   						<br><b><a href="#home">Discovery Flight </a>
+							<p>
+</p>   					
+					</div>
+				</div>
+
+				<!-- SINGLE FOCUS COLUMN -->
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+				
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================
+     SECTION: PRICING
+    ============================== -->
+	<section class="pricing bgcolor-2" id="section6">
+		<div class="container">
+
+			<!-- SECTION NUMBER -->
+			<div class="section-number centered-number">
+				06
+			</div>
+
+			<!-- SECTION HEADER -->
+			<div class="section-header">
+				<h2>Pilot Shop.</h2>
+				<div class="sub-heading">
+					We understand your requirement and provide quality works.
+				</div>
+			</div>
+
+			<div class="row packages">
+
+				<!-- SINGLE PACKAGE -->
+				<div class="col-lg-4 col-md-4">
+					<div class="single-package green-line-top white-bg diffuse-shadow wow fadeInLeft" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+
+						<h5>Charts</h5>
+
+						
+						<img src="{% static 'peacebird/charts.png' %}" alt="">
+						
+
+						<ul class="feature-list">
+							<li><span class="strong">You can get here Flight Charts</li>
+						<a href="" class="btn btn-default standard-button green-outline">View Products</a>
+					</div>
+				</div>
+
+				<!-- SINGLE PACKAGE -->
+				<div class="col-lg-4 col-md-4">
+					<div class="single-package red-line-top white-bg diffuse-shadow wow fadeInUp" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+						<h5>Books</h5>
+
+						<img src="{% static 'peacebird/books.jpg' %}" alt="">
+						
+
+						<ul class="feature-list">
+							<li><span class="strong">You can get here Flight Books</li>
+						<a href="" class="btn btn-default standard-button green-outline">View Products</a>
+
+					</div>
+				</div>
+
+				<!-- SINGLE PACKAGE -->
+				<div class="col-lg-4 col-md-4">
+					<div class="single-package purple-line-top white-bg diffuse-shadow wow fadeInRight" data-wow-offset="30" data-wow-duration="1.5s" data-wow-delay="0.15s">
+						<h5>Check Lists</h5>
+
+						<img src="{% static 'peacebird/check.jpg' %}" alt="">
+						
+
+						<ul class="feature-list">
+							<li><span class="strong">You can get here Flight Books</li>
+						<a href="" class="btn btn-default standard-button green-outline">View Products</a>
+						
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- =========================
+     SECTION: CONTACT US
+    ============================== -->
+	<section class="get-in-touch" id="section10">
+		<div class="container">
+
+			<!-- SECTION NUMBER -->
+			<div class="section-number centered-number">
+				10
+			</div>
+
+			<!-- SECTION HEADER -->
+			<div class="section-header">
+				<h2>Get in Touch</h2>
+				<div class="sub-heading">
+					We understand your requirement and provide quality works.
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+
+					<!-- MAIL SUCCESS MESSAGE - ERROR MESSAGE AVAILABLE IN custom.js -->
+					<h6 class="success green-text">Your Message Successfuly Sent</h6>
+					<h6 class="error red-text"></h6>
+
+					<form id="contact-form" class="contact-form">
+						<div class="row">
+
+							<div class="col-lg-6 col-md-6">
+								<input type="text" id="name" name="name" class="input-field" placeholder="Your Name">
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<input type="email" id="email" name="email" class="input-field" placeholder="Your Email">
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<input type="text" id="subject" name="subject" class="input-field" placeholder="Subject">
+							</div>
+
+							<div class="col-lg-6 col-md-6">
+								<input type="text" id="budget" name="budget" class="input-field" placeholder="Project Budget">
+							</div>
+
+							<div class="col-lg-12">
+								<textarea name="message" id="message" class="input-field" rows="8" placeholder="Your Message"></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-default standard-button red-button">Send Message</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+
+			<!-- FOOTER -->
+			<div class="row no-gutters">
+				<div class="footer clearfix">
+
+					<div class="col-lg-3 col-md-3">
+						<div class="footer-col">
+							<div class="footer-logo">
+								<img src="{% static 'peacebird/logo.png' %}" alt=""> <!-- LOGO -->
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-3">
+						<div class="footer-col">
+							
+							<p >
+							<div class="container text-center">
+							    <a href="#"><i class="fa fa-facebook"></i></a>
+							    <a href="#"><i class="fa fa-twitter"></i></a>
+							    <a href="#"><i class="fa fa-linkedin"></i></a>
+							    <a href="#"><i class="fa fa-google-plus"></i></a>
+							    <a href="#"><i class="fa fa-skype"></i></a>
+							  </div>
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-3">
+						<div class="footer-col">
+							<h6 class="purple-text">PeaceBird Co.</h6>
+							<p >
+								Makka-Al-Mukkarama Street-Banadir Mogadishu-Somalia
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-3">
+						<div class="footer-col">
+						
+						</div>
+					</div>
+				</div>
+
+				<div class="four-lines">
+					<div class="line red-line-bottom">
+					</div>
+					<div class="line green-line-bottom">
+					</div>
+					<div class="line purple-line-bottom">
+					</div>
+					<div class="line yellow-line-bottom">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================
+     JS SCRIPTS
+    ============================== -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/third-party-scripts.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>
+
+	<script src="js/third-party-scripts.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+
+</html>

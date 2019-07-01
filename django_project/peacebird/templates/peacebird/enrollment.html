@@ -1,0 +1,11 @@
+
+{% block content %} 
+ <h1>This is Peacebird About Page	</h1>
+ {% for post in posts %}
+ 	<h1> {{post.title }}</h1>
+ 	<p>	By {{post.auther}} on {{post.date_posted }}</p>
+ 	<p>	{{post.content }}</p>
+ {% endfor %}
+ 
+{% endblock content %}
+ 
